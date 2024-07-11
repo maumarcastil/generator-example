@@ -33,13 +33,17 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import DashboardRouter from './modules/ui/router/dashboardRouter';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
+      {/* Dashboard */}
+      <DashboardRouter />
+
+      {/* <IonRouterOutlet>
         <Route path="/" exact={true}>
           <Redirect to="/home" />
         </Route>
@@ -47,9 +51,9 @@ const App: React.FC = () => (
           <Home />
         </Route>
         <Route path="/message/:id">
-           <ViewMessage />
+          <ViewMessage />
         </Route>
-      </IonRouterOutlet>
+      </IonRouterOutlet> */}
     </IonReactRouter>
   </IonApp>
 );
