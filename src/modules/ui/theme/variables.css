@@ -3,3 +3,29 @@ http://ionicframework.com/docs/theming/ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg: ##F7F7F8;
+  --bgSoft: #ECE5FF;
+  --text: #27242D;
+  --textSoft: #7C6C8A;
+  --shadow-color: #CBCBCB;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
