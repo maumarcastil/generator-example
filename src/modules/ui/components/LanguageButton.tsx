@@ -56,17 +56,12 @@ const LanguageButton = () => {
           <Button
             variant="text"
             className="flex items-center gap-3 text-base font-normal capitalize tracking-normal outline-none"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
           >
             <Avatar
               size="xs"
               alt="avatar"
               src={currentLanguage === 'en' ? usa?.flags.png : spain?.flags.png}
               placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
             />
             <FiChevronDown
               strokeWidth={2.5}
