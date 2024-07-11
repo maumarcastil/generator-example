@@ -14,7 +14,7 @@ const DashboardRouter = () => {
   return (
     <IonRouterOutlet>
       <DashboardLayout>
-        <Route path="/" exact component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route path="/collections" exact component={CollectionsPage} />
         <Route path="/marketplace" exact component={MarketplacePage} />
         <Route path="/wallet" exact component={WalletPage} />
