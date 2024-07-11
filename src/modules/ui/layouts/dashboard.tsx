@@ -1,5 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
+import { IonContent, IonPage } from '@ionic/react';
 
+import { NavbarComponent } from '../components/navbar';
 interface DashboardLayoutProps {
   children: ReactNode;
 }
@@ -7,10 +9,10 @@ interface DashboardLayoutProps {
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
     <>
-      <h1>Dashboard Layout</h1>
-      <p>Welcome to the Dashboard Layout</p>
-
-      {children}
+      <IonPage>
+        <NavbarComponent />
+        <IonContent>{children}</IonContent>
+      </IonPage>
     </>
   );
 };
